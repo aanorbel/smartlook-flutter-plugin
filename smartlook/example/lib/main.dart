@@ -18,7 +18,7 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
     initPlatformState();
-    Smartlook.start('beta_a76b285a70ecfb2b2cc13a13b0be2de6b60acf99');
+    Smartlook.start('b2f22c89882a8445ed34cf77816819cb004e24d5');
     Smartlook.setUserIdentifier('FlutterLul');
   }
 

@@ -8,7 +8,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.android.tools.build:gradle:3.4.2'
     }
 }
 
@@ -16,6 +16,9 @@ rootProject.allprojects {
     repositories {
         google()
         jcenter()
+        maven {
+            url "https://sdk.smartlook.com/android/release"
+        }
     }
 }
 
@@ -31,4 +34,8 @@ android {
     lintOptions {
         disable 'InvalidPackage'
     }
+}
+
+dependencies{
+    implementation('com.smartlook.recording:app:1.0.0-native')
 }
